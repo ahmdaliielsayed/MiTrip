@@ -20,7 +20,7 @@
     </group>
 
     <item
-        android:title="Other">
+        android:title="@string/other">
 
         <menu>
             <item
