@@ -1,36 +1,45 @@
 {
   "project_info": {
-    "project_number": "45588459581",
-    "firebase_url": "https://mitrip-1f09c.firebaseio.com",
-    "project_id": "mitrip-1f09c",
-    "storage_bucket": "mitrip-1f09c.appspot.com"
+    "project_number": "175196349682",
+    "firebase_url": "https://mi-trip-9276b.firebaseio.com",
+    "project_id": "mi-trip-9276b",
+    "storage_bucket": "mi-trip-9276b.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:45588459581:android:6782bb073e73699831ba54",
+        "mobilesdk_app_id": "1:175196349682:android:d47b7b345ba99530251c6b",
         "android_client_info": {
-          "package_name": "com.example.mitrip"
+          "package_name": "com.mi.mitrip"
         }
       },
       "oauth_client": [
         {
-          "client_id": "45588459581-684o8csvn4loml3rtcsmmfg9175uqvd1.apps.googleusercontent.com",
+          "client_id": "175196349682-6i3f39ihokv9d45pbaelj5e42vbu2rbm.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.mitrip",
+            "package_name": "com.mi.mitrip",
             "certificate_hash": "36ad35b4e493cfeea8ea7b27a12fbf39e40f918d"
           }
+        },
+        {
+          "client_id": "175196349682-autp5efjrbknjtlokjdr2ln1mrj7fhd7.apps.googleusercontent.com",
+          "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyB_vZQv-gZs1mLObAHkqw6erMhlrBDEWic"
+          "current_key": "AIzaSyCqJt4holxKA3PSX1bHIuw-P1trawHOkCg"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "175196349682-autp5efjrbknjtlokjdr2ln1mrj7fhd7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }

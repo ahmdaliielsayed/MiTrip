@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.mitrip">
+    package="com.mi.mitrip">
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
          Google Maps Android API v2, but you must specify either coarse or fine
@@ -12,7 +12,7 @@
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
 
     <application
-        android:name=".activity.MiTrip"
+        android:name="com.mi.mitrip.activity.MiTrip"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -20,7 +20,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".NoteDialogueActivity"
+            android:name="com.mi.mitrip.NoteDialogueActivity"
             android:screenOrientation="portrait"
             android:theme="@style/dialogueTheme"/>
         <!--
@@ -36,38 +36,38 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".MapPackage.MapsActivity"
+            android:name="com.mi.mitrip.MapPackage.MapsActivity"
             android:label="@string/title_activity_maps" />
         <activity
-            android:name=".activity.DialogueActivity"
+            android:name="com.mi.mitrip.activity.DialogueActivity"
             android:screenOrientation="portrait"
             android:theme="@style/dialogueTheme" />
         <activity
-            android:name=".activity.EditTripActivity"
+            android:name="com.mi.mitrip.activity.EditTripActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".AddNotePackage.ViewPackage.AddNoteActivity"
+            android:name="com.mi.mitrip.AddNotePackage.ViewPackage.AddNoteActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".activity.TripActivity"
+            android:name="com.mi.mitrip.activity.TripActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".activity.HomeActivity"
+            android:name="com.mi.mitrip.activity.HomeActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".activity.SignUpActivity"
+            android:name="com.mi.mitrip.activity.SignUpActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".activity.SignInActivity"
+            android:name="com.mi.mitrip.activity.SignInActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".activity.SplashActivity"
+            android:name="com.mi.mitrip.activity.SplashActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -78,12 +78,12 @@
         </activity>
 
         <receiver
-            android:name=".activity.AlertReceiver"
+            android:name="com.mi.mitrip.activity.AlertReceiver"
             android:enabled="true"
             android:exported="true" />
 
         <service
-            android:name=".FloatingWidgetShowService"
+            android:name="com.mi.mitrip.FloatingWidgetShowService"
             android:enabled="true"
             android:exported="false" />
     </application>
