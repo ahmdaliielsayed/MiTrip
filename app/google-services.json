@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "45588459581",
+    "firebase_url": "https://mitrip-1f09c.firebaseio.com",
+    "project_id": "mitrip-1f09c",
+    "storage_bucket": "mitrip-1f09c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:45588459581:android:6782bb073e73699831ba54",
+        "android_client_info": {
+          "package_name": "com.example.mitrip"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "45588459581-684o8csvn4loml3rtcsmmfg9175uqvd1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mitrip",
+            "certificate_hash": "36ad35b4e493cfeea8ea7b27a12fbf39e40f918d"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_vZQv-gZs1mLObAHkqw6erMhlrBDEWic"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

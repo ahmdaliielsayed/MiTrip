@@ -1,0 +1,153 @@
+<resources>
+    <string name="app_name">MiTrip</string>
+
+    <!-- Facebook application ID and custom URL scheme (app ID prefixed by 'fb'). -->
+    <string name="facebook_application_id" translatable="false">YOUR_APP_ID</string>
+    <string name="facebook_login_protocol_scheme" translatable="false">fbYOUR_APP_ID</string>
+    <!-- Twitter consumer key and secret -->
+    <string name="twitter_consumer_key" translatable="false">YOUR_CONSUMER_KEY</string>
+    <string name="twitter_consumer_secret" translatable="false">YOUR_CONSUMER_SECRET</string>
+
+    <string name="title_sign_in">تسجيل الدخول</string>
+    <string name="title_sign_up">إنشاء حساب</string>
+
+    <string name="editTxtEmail">البريد الإلكتروني</string>
+    <string name="editTxtPassword">كلمة المرور</string>
+    <string name="txtViewForgetPassword">نسيت كلمة السر؟</string>
+    <string name="optional">التسجيل بواسطة</string>
+    <string name="txtViewDoNotHaveAccount">ليس لديكـ حساب؟</string>
+    <string name="txtViewNewAccount">حساب\nجديد</string>
+    <string name="txtUploadProfilePhoto">اختر\nصورة الحساب</string>
+    <string name="editTxtUserName">اسم المستخدم</string>
+    <string name="editTxtRePassword">أعد إدخال كلمة المرور</string>
+    <string name="editTxtPhone">رقم الهاتف</string>
+    <string name="txtViewAlreadyRegistered">سجلت بالفعل سجل دخول من هنا</string>
+    <string name="warning">تحذير</string>
+    <string name="error">خطأ</string>
+    <string name="errorMsgPasswordIncompatible">كلمتي المرور غير متطابقتان</string>
+    <string name="errorMsgAuthenticationFailed">فشل المصادقة!\nهذا البريد الإلكتروني مسجل بالفعل من قبل!</string>
+    <string name="errorMsgSignInFailed">فشل تسجيل الدخول!\nالبريد الإلكتروني أو كلمة المرور غير صحيحة!</string>
+    <string name="errorMsgStartPoint">ابحث عن نقطة بداية الرحلة!</string>
+    <string name="errorMsgEndPoint">ابحث عن نقطة نهاية الرحلة!</string>
+    <string name="errorMsgNetworkConnection">تم إغلاق اتصالك بنقل البيانات و الواي فاي!\nافتح الإتصال بالإنترنت و حاول مرة أخرى!</string>
+    <string name="errorMsgPermissionRequired">الإذن مطلوب لفتح الملاحظات الخاصة برحلتك!\nيرجى إعطاء الإذن للعمل بشكل صحيح!</string>
+    <string name="ok">حسناََ</string>
+    <string name="registration_success">تم التسجيل بنجاح!\nمن فضلكـ ، تحقق من بريدكـ الإلكتروني لتتمكن من تسجيل الدخول إلى حسابكـ</string>
+    <string name="verifyEmail">يرجى التحقق من عنوان البريد الإلكتروني الخاص بك لتسجيل الدخول!</string>
+
+    <string name="upcoming">الرحلات القادمة</string>
+    <string name="history">الرحلات السابقة</string>
+    <string name="historyMap">رسم الرحلات السابقة على الخريطة</string>
+    <string name="sync">تزامن</string>
+    <string name="logout">تسجيل الخروج</string>
+    <string name="txtViewName">أحمد علي</string>
+    <string name="txtViewMail">ahmedali666680@yahoo.com</string>
+
+    <string name="letsgo">هيا بنا</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+
+    <!-- Navigation Drawer menu labels -->
+    <string name="nav_upcoming">Upcoming</string>
+    <string name="nav_history">History</string>
+    <string name="nav_profile">Profile</string>
+    <string name="nav_sync">Sync</string>
+    <string name="nav_signout">Sign out</string>
+
+    <!-- Toolbar titles when navigation menu item is selected -->
+    <string-array name="nav_item_activity_titles">
+        <item>رحلاتي</item>
+        <item>الرحلات السابقة</item>
+        <item>رسم الرحلات السابقة على الخريطة</item>
+    </string-array>
+
+    <string name="activity_title_about_us">معلومات عنا</string>
+    <string name="activity_title_privacy_policy">سياسة الخصوصية</string>
+    <string name="action_clear_all">امسح الكل</string>
+    <string name="action_logout">تسجيل الخروج</string>
+    <string name="action_mark_all_read">وضع علامة قراءة للجميع</string>
+    <string name="privacy_policy">سياسة الخصوصية</string>
+    <string name="editTxtStartPoint">نقطة البداية</string>
+    <string name="editTxtDate">تاريخ الرحلة</string>
+    <string name="editTxtTime">وقت الرحلة</string>
+    <string name="txtViewStartPoint">نقطة البداية</string>
+    <string name="txtViewEndPoint">نقطة النهاية</string>
+    <string name="txtViewTripType">نوع الرحلة</string>
+    <string name="rbOneDirection">اتجاه واحد</string>
+    <string name="rbRoundTrip">ذهاباََ و إياباََ</string>
+    <string name="btnAdd">إضافة</string>
+    <string name="editTxtTripName">اسم الرحلة</string>
+    <string name="editTxtDate2">تاريخ العودة</string>
+    <string name="editTxtTime2">وقت العودة</string>
+
+    <array name="tripType">
+        <item>اتجاه واحد</item>
+        <item>ذهاباََ و إياباََ</item>
+    </array>
+
+    <string name="add_your_notes">ملاحظاتي</string>
+    <string name="start">بداية الرحلة</string>
+    <string name="cancel">إلغاء</string>
+    <string name="later">لاحقاََ</string>
+    <string name="editTxtAddNote">أضف ملاحظات</string>
+    <string name="btnAddPlus">+</string>
+    <string name="btnSaveNotes">حفظ الملاحظات</string>
+    <string name="txtViewAddTrip">أضف رحلة</string>
+    <string name="txtViewTripDate">17/10/2019</string>
+    <string name="txtViewTripTime">06:45</string>
+    <string name="txtViewTripName">اسم الرحلة</string>
+    <string name="txtViewTripState">الرحلات القادمة</string>
+    <string name="btnEdit">تعديل</string>
+    <string name="btnDeleteTrip">حذف</string>
+    <string name="txtViewDone">تم</string>
+    <string name="txtViewNoItem">لا يوجد عناصر هنا!</string>
+    <string name="title_activity_maps">الخريطة</string>
+
+    <string name="selectApplication">اختر البرنامج</string>
+    <string name="enterValidTripDate">من فضلكـ ، أدخل تاريخ صحيح للرحلة!</string>
+    <string name="enterValidTripName">من فضلكـ ، أدخل اسم الرحلة</string>
+    <string name="enterValidTripTime">من فضلكـ ، أدخل وقت صحيح للرحلة!</string>
+    <string name="tripUpdatedSuccessfully">تم تحديث الرحلة بنجاح!</string>
+    <string name="enterStartPoint">من فضلكـ ، أدخل نقطة بداية الرحلة!</string>
+    <string name="enterEndPoint">من فضلكـ ، أدخل نقطة نهاية الرحلة!</string>
+    <string name="openDialogue">من فضلكـ ، اضغط مرة أخرى للفتح</string>
+
+    <string name="typeYourEmail">من فضلكـ ، اكتب بريدكـ الإلكتروني!</string>
+    <string name="typeYourUserName">من فضلكـ ، اكتب اسم المستخدم الخاص بكـ!</string>
+    <string name="noFileSelected">لم يتم اختيار أي ملف!</string>
+    <string name="typeEmailAddressCorrectly">من فضلكـ ، اكتب عنوان بريدكـ الإلكتروني بشكل صحيح! مثل:\nexample@example.com</string>
+    <string name="typeYourPassword">من فضلكـ ، اكتب كلمة المرور الخاصة بكـ!</string>
+    <string name="passwordLength">يجب أن تكون كلمة المرور 6 أحرف على الأقل!</string>
+    <string name="confirmYourPassword">من فضلكـ ، اكتب كلمة المرور الخاصة بكـ مجددا للتأكيد على صحتها!</string>
+    <string name="typeYourPhoneNumber">من فضلكـ ، اكتب رقم هاتفكـ!</string>
+    <string name="enterValidPhoneNumber">ادخل رقم هاتف صالح!</string>
+    <string name="commentOnPlayStore">يرجى التعليق بالخطأ على متجر play لإصلاح هذا الخطأ &#8230; شكرا!</string>
+    <string name="youMustInsertTripDateFirst">يجب ادخال تاريخ الرحلة أولاََ!</string>
+    <string name="youMustInsertTripReturnDateAfterStartDate">يجب إدخال تاريخ رحلة العودة بعد تاريخ البداية!</string>
+    <string name="enterValidTripReturnDate">من فضلكـ ، ادخل تاريخ عودة صالح!</string>
+    <string name="youMustInsertTripTimeFirst">يجب إدخال وقت الرحلة أولاََ!</string>
+    <string name="YouMustInsertTripReturnDateFirst">يجب إدخال تاريخ رحلة العودة أولاََ!</string>
+    <string name="YouMustInsertTripReturnTimeAfterStartTime">يجب إدخال وقت رحلة العودة بعد وقت البداية!</string>
+    <string name="enterValidTripReturnTime">من فضلكـ ، ادخل وقت عودة صالح!</string>
+    <string name="tripAddedSuccessfully">تمت إضافة الرحلة بنجاح!</string>
+    <string name="emptyNote">ملاحظة فارغة!\nاكتب ملاحظة لإضافتها!</string>
+    <string name="noteAddedSuccessfully">تم إضافة الملاحظة بنجاح!</string>
+
+    <string name="areYouSureToDeleteThisNote">هل أنت متأكد من حذف هذه الملاحظة؟</string>
+    <string name="yes">نعم</string>
+    <string name="noteDeletedSuccessfully">تم حذف الملاحظة بنجاح!</string>
+    <string name="no">لأ</string>
+    <string name="areYouSureToDeleteThisTrip">هل أنت متأكد من حذف هذه الرحلة؟</string>
+    <string name="tripDeletedSuccessfully">تم حذف الرحلة بنجاح!</string>
+    <string name="tripCancelledSuccessfully">تم إلغاء الرحلة بنجاح!</string>
+
+    <string name="addNotes">إضافة ملاحظات</string>
+    <string name="edit">تعديل</string>
+    <string name="delete">حذف</string>
+
+    <string name="other">أخرى</string>
+</resources>

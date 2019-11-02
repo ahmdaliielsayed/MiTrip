@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/upcoming"
+            android:icon="@drawable/ic_arrow_upward_black_24dp"
+            android:title="@string/upcoming" />
+
+        <item
+            android:id="@+id/history"
+            android:icon="@drawable/ic_history_black_24dp"
+            android:title="@string/history" />
+
+        <item
+            android:id="@+id/historyMap"
+            android:icon="@drawable/toicon_24dp"
+            android:title="@string/historyMap" />
+    </group>
+
+    <item
+        android:title="Other">
+
+        <menu>
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/logout"
+                android:title="@string/logout" />
+        </menu>
+    </item>
+
+</menu>

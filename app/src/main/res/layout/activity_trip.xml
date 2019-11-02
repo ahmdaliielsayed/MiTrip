@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.TripActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imgHeader"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/header2_lets_go" />
+
+            <TextView
+                android:id="@+id/txtViewLetsGo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|start"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/letsgo"
+                android:textColor="@color/white"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/txtViewStartPoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/txtViewStartPoint"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/cardView1"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/cardView1"
+            app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtViewStartPoint">
+
+            <fragment
+                android:id="@+id/autocomplete_fragment1"
+                android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </fragment>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/txtViewEndPoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/txtViewEndPoint"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/cardView1"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/cardView1"
+            app:layout_constraintTop_toBottomOf="@+id/cardView1" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@+id/cardView1"
+            app:layout_constraintStart_toStartOf="@+id/cardView1"
+            app:layout_constraintTop_toBottomOf="@+id/txtViewEndPoint">
+
+            <fragment
+                android:id="@+id/autocomplete_fragment2"
+                android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </fragment>
+        </androidx.cardview.widget.CardView>
+
+        <EditText
+            android:id="@+id/editTxtTripName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:drawableStart="@drawable/ic_create_black_24dp"
+            android:drawablePadding="32dp"
+            android:drawableTint="@color/colorPrimaryDark"
+            android:ems="10"
+            android:hint="@string/editTxtTripName"
+            android:inputType="textPersonName"
+            android:paddingStart="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/cardView2"
+            app:layout_constraintStart_toStartOf="@+id/cardView2"
+            app:layout_constraintTop_toBottomOf="@+id/cardView2" />
+
+        <EditText
+            android:id="@+id/editTxtDate1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:drawableStart="@drawable/ic_date_range_black_24dp"
+            android:drawablePadding="32dp"
+            android:drawableTint="@color/colorPrimaryDark"
+            android:ems="10"
+            android:focusable="false"
+            android:hint="@string/editTxtDate"
+            android:inputType="date"
+            android:paddingStart="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/editTxtTripName"
+            app:layout_constraintStart_toStartOf="@+id/editTxtTripName"
+            app:layout_constraintTop_toBottomOf="@+id/editTxtTripName" />
+
+        <EditText
+            android:id="@+id/editTxtTime1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:drawableStart="@drawable/ic_access_time_black_24dp"
+            android:drawablePadding="32dp"
+            android:drawableTint="@color/colorPrimaryDark"
+            android:ems="10"
+            android:focusable="false"
+            android:hint="@string/editTxtTime"
+            android:inputType="time"
+            android:paddingStart="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/editTxtDate1"
+            app:layout_constraintStart_toStartOf="@+id/editTxtDate1"
+            app:layout_constraintTop_toBottomOf="@+id/editTxtDate1" />
+
+        <TextView
+            android:id="@+id/txtViewTripType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/txtViewTripType"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/editTxtTime1"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/editTxtTime1"
+            app:layout_constraintTop_toBottomOf="@+id/editTxtTime1" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:entries="@array/tripType"
+            app:layout_constraintEnd_toEndOf="@+id/editTxtTime1"
+            app:layout_constraintStart_toStartOf="@+id/editTxtTime1"
+            app:layout_constraintTop_toBottomOf="@+id/txtViewTripType" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/spinner"
+            app:layout_constraintStart_toStartOf="@+id/spinner"
+            app:layout_constraintTop_toBottomOf="@+id/spinner">
+
+            <EditText
+                android:id="@+id/editTxtDate2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:drawableStart="@drawable/ic_date_range_black_24dp"
+                android:drawablePadding="32dp"
+                android:drawableTint="@color/colorPrimaryDark"
+                android:ems="10"
+                android:focusable="false"
+                android:hint="@string/editTxtDate2"
+                android:inputType="date"
+                android:paddingStart="16dp" />
+
+            <EditText
+                android:id="@+id/editTxtTime2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:drawableStart="@drawable/ic_access_time_black_24dp"
+                android:drawablePadding="32dp"
+                android:drawableTint="@color/colorPrimaryDark"
+                android:ems="10"
+                android:focusable="false"
+                android:hint="@string/editTxtTime2"
+                android:inputType="time"
+                android:paddingStart="16dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnAdd"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/btn_style"
+            android:text="@string/btnAdd"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/spinner"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/spinner"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+        <!--<ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />-->
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

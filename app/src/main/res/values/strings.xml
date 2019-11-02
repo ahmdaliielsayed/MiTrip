@@ -1,0 +1,153 @@
+<resources>
+    <string name="app_name">MiTrip</string>
+
+    <!-- Facebook application ID and custom URL scheme (app ID prefixed by 'fb'). -->
+    <string name="facebook_application_id" translatable="false">YOUR_APP_ID</string>
+    <string name="facebook_login_protocol_scheme" translatable="false">fbYOUR_APP_ID</string>
+    <!-- Twitter consumer key and secret -->
+    <string name="twitter_consumer_key" translatable="false">YOUR_CONSUMER_KEY</string>
+    <string name="twitter_consumer_secret" translatable="false">YOUR_CONSUMER_SECRET</string>
+
+    <string name="title_sign_in">Sign in</string>
+    <string name="title_sign_up">Sign up</string>
+
+    <string name="editTxtEmail">Email</string>
+    <string name="editTxtPassword">Password</string>
+    <string name="txtViewForgetPassword">Forget Password?</string>
+    <string name="optional">SIGN IN WITH</string>
+    <string name="txtViewDoNotHaveAccount">Don\'t Have Account?</string>
+    <string name="txtViewNewAccount">New\nAccount</string>
+    <string name="txtUploadProfilePhoto">Upload your\nprofile picture</string>
+    <string name="editTxtUserName">User Name</string>
+    <string name="editTxtRePassword">Re-type Password</string>
+    <string name="editTxtPhone">Phone Number</string>
+    <string name="txtViewAlreadyRegistered">Already Registered Sign in here</string>
+    <string name="warning">Warning</string>
+    <string name="error">Error</string>
+    <string name="errorMsgPasswordIncompatible">Two passwords incompatible</string>
+    <string name="errorMsgAuthenticationFailed">Authentication Failed!\nThis Email already registered before!</string>
+    <string name="errorMsgSignInFailed">Sign in Failed!\nEmail or Password was incorrect!</string>
+    <string name="errorMsgStartPoint">Search for your start point!</string>
+    <string name="errorMsgEndPoint">Search for your End point!</string>
+    <string name="errorMsgNetworkConnection">Your Data transfer and Wifi connection closed!\nOpen Internet Connection and try again!</string>
+    <string name="errorMsgPermissionRequired">Permission required to open your notes!\nPlease, give the permission to work correctly!</string>
+    <string name="ok">Ok</string>
+    <string name="registration_success">Registered Successfully\nPlease, check your email for verification.</string>
+    <string name="verifyEmail">Please, verify your email address to login.</string>
+
+    <string name="upcoming">Upcoming</string>
+    <string name="history">History</string>
+    <string name="historyMap">History Map</string>
+    <string name="sync">Synchronize</string>
+    <string name="logout">Sign out</string>
+    <string name="txtViewName">Ahmed Ali</string>
+    <string name="txtViewMail">ahmedali666680@yahoo.com</string>
+
+    <string name="letsgo">LET\'S GO</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+
+    <!-- Navigation Drawer menu labels -->
+    <string name="nav_upcoming">Upcoming</string>
+    <string name="nav_history">History</string>
+    <string name="nav_profile">Profile</string>
+    <string name="nav_sync">Sync</string>
+    <string name="nav_signout">Sign out</string>
+
+    <!-- Toolbar titles when navigation menu item is selected -->
+    <string-array name="nav_item_activity_titles">
+        <item>My Trips</item>
+        <item>History</item>
+        <item>Profile</item>
+    </string-array>
+
+    <string name="activity_title_about_us">About Us</string>
+    <string name="activity_title_privacy_policy">Privacy Policy</string>
+    <string name="action_clear_all">Clear All</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_mark_all_read">Mark All as Read</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="editTxtStartPoint">Start Point</string>
+    <string name="editTxtDate">Trip Date</string>
+    <string name="editTxtTime">Trip Time</string>
+    <string name="txtViewStartPoint">Start Point</string>
+    <string name="txtViewEndPoint">End Point</string>
+    <string name="txtViewTripType">Trip Type</string>
+    <string name="rbOneDirection">One Direction</string>
+    <string name="rbRoundTrip">Round Trip</string>
+    <string name="btnAdd">Add</string>
+    <string name="editTxtTripName">Trip Name</string>
+    <string name="editTxtDate2">Trip return Date</string>
+    <string name="editTxtTime2">Trip return Time</string>
+
+    <array name="tripType">
+        <item>One Direction</item>
+        <item>Round Trip</item>
+    </array>
+
+    <string name="add_your_notes">My Notes</string>
+    <string name="start">Start</string>
+    <string name="cancel">Cancel</string>
+    <string name="later">Later</string>
+    <string name="editTxtAddNote">Add Note</string>
+    <string name="btnAddPlus">+</string>
+    <string name="btnSaveNotes">Save Notes</string>
+    <string name="txtViewAddTrip">Add Trip</string>
+    <string name="txtViewTripDate">17/10/2019</string>
+    <string name="txtViewTripTime">06:45</string>
+    <string name="txtViewTripName">Trip Name</string>
+    <string name="txtViewTripState">Upcoming</string>
+    <string name="btnEdit">Edit</string>
+    <string name="btnDeleteTrip">Delete</string>
+    <string name="txtViewDone">DONE</string>
+    <string name="txtViewNoItem">There is no item here!</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="selectApplication">Select an application</string>
+    <string name="enterValidTripDate">Please, Enter a valid Trip Date!</string>
+    <string name="enterValidTripName">Please, Enter a valid Trip Name!</string>
+    <string name="enterValidTripTime">Please, Enter a valid Trip Time!</string>
+    <string name="tripUpdatedSuccessfully">Trip updated successfully!</string>
+    <string name="enterStartPoint">Please, Enter a valid Trip Start point!</string>
+    <string name="enterEndPoint">Please, Enter a valid Trip End point!</string>
+    <string name="openDialogue">Click again to open dialogue!</string>
+
+    <string name="typeYourEmail">Please, Type your Email!</string>
+    <string name="typeYourUserName">Please, Type your User Name!</string>
+    <string name="noFileSelected">No file selected!</string>
+    <string name="typeEmailAddressCorrectly">Please, Type your Email address correctly!\nlike: example@example.com</string>
+    <string name="typeYourPassword">Please, Type your Password!</string>
+    <string name="passwordLength">Password should be at least 6 characters long!</string>
+    <string name="confirmYourPassword">Please, Confirm your password!</string>
+    <string name="typeYourPhoneNumber">Please, Type your Phone Number!</string>
+    <string name="enterValidPhoneNumber">Enter a valid phone number!</string>
+    <string name="commentOnPlayStore">Please, comment with error on play store to fix this error!</string>
+    <string name="youMustInsertTripDateFirst">You must insert Trip Date first!</string>
+    <string name="youMustInsertTripReturnDateAfterStartDate">You must insert Trip return Date after Start Date!</string>
+    <string name="enterValidTripReturnDate">Please, Enter a valid Trip return Date!</string>
+    <string name="youMustInsertTripTimeFirst">You must insert Trip Time first!</string>
+    <string name="YouMustInsertTripReturnDateFirst">You must insert Trip return Date first!</string>
+    <string name="YouMustInsertTripReturnTimeAfterStartTime">You must insert Trip return Time after Start Time!</string>
+    <string name="enterValidTripReturnTime">Please, Enter a valid Trip return Time!</string>
+    <string name="tripAddedSuccessfully">Trip added successfully!</string>
+    <string name="emptyNote">Empty note!\nEnter note to add it!</string>
+    <string name="noteAddedSuccessfully">Note added successfully!</string>
+
+    <string name="areYouSureToDeleteThisNote">Are you sure to delete this note?</string>
+    <string name="yes">Yes</string>
+    <string name="noteDeletedSuccessfully">Note Deleted successfully!</string>
+    <string name="no">No</string>
+    <string name="areYouSureToDeleteThisTrip">Are you sure to delete this trip?</string>
+    <string name="tripDeletedSuccessfully">Trip Deleted successfully!</string>
+    <string name="tripCancelledSuccessfully">Trip cancelled successfully!</string>
+
+    <string name="addNotes">Add Notes</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+
+    <string name="other">Other</string>
+</resources>

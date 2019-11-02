@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2831b2</color>
+    <color name="colorPrimaryDark">#1B248B</color>
+    <color name="colorAccent">#2831B2</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="sky">#a5b1fb</color>
+
+    <color name="txt">#7476B3</color>
+    <color name="txtCard">#282828</color>
+
+    <color name="btnDialogue">#65B1EF</color>
+</resources>
