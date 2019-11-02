@@ -56,10 +56,12 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
             android:text="@string/editTxtStartPoint"
             android:textAlignment="center"
             android:textColor="@color/colorPrimary"
             android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline"
             app:layout_constraintEnd_toStartOf="@+id/imageView3"
             app:layout_constraintStart_toStartOf="@+id/divider"
             app:layout_constraintTop_toBottomOf="@+id/imageViewStartPoint" />
@@ -89,37 +91,30 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
             android:text="@string/txtViewEndPoint"
             android:textAlignment="center"
             android:textColor="@color/colorPrimary"
             android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline"
             app:layout_constraintEnd_toEndOf="@+id/divider"
             app:layout_constraintStart_toEndOf="@+id/imageView3"
             app:layout_constraintTop_toBottomOf="@+id/imageViewEndPoint" />
-
-        <View
-            android:id="@+id/divider2"
-            android:layout_width="0dp"
-            android:layout_height="1dp"
-            android:layout_marginTop="32dp"
-            android:layout_marginEnd="16dp"
-            android:background="?android:attr/listDivider"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/txtViewTripName"
-            app:layout_constraintTop_toBottomOf="@+id/txtViewStartPoint" />
 
         <Button
             android:id="@+id/btnStartTrip"
             style="@style/Widget.AppCompat.Button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
             android:layout_weight="1"
             android:background="@drawable/btn_dialogue_style"
             android:text="@string/start"
             android:textColor="@color/white"
-            app:layout_constraintEnd_toEndOf="@+id/divider2"
-            app:layout_constraintTop_toBottomOf="@+id/divider2" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/txtViewEndPoint"
+            app:layout_constraintTop_toTopOf="@+id/guideline" />
 
         <Button
             android:id="@+id/btnLaterTrip"
@@ -131,6 +126,7 @@
             android:background="@drawable/btn_dialogue_style"
             android:text="@string/later"
             android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/btnStartTrip"
             app:layout_constraintEnd_toStartOf="@+id/btnStartTrip"
             app:layout_constraintTop_toTopOf="@+id/btnStartTrip" />
 
@@ -140,17 +136,22 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
-            android:layout_marginBottom="24dp"
             android:layout_weight="1"
             android:background="@drawable/btn_dialogue_style"
             android:text="@string/cancel"
             android:textColor="@color/white"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/btnLaterTrip"
             app:layout_constraintEnd_toStartOf="@+id/btnLaterTrip"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/divider2"
-            app:layout_constraintTop_toTopOf="@+id/btnLaterTrip"
-            app:layout_constraintVertical_bias="1.0" />
+            app:layout_constraintStart_toStartOf="@+id/txtViewStartPoint"
+            app:layout_constraintTop_toTopOf="@+id/btnLaterTrip" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="240dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
