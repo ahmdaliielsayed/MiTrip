@@ -77,7 +77,7 @@ public class EditTripActivity extends AppCompatActivity {
 
         databaseTrips = FirebaseDatabase.getInstance().getReference("trips");
 
-        APIKey = "AIzaSyDABYpOt9hwEvKZ5cgLJtDOadI2LOHpv9E";
+        APIKey = "AIzaSyCOGWFZpYcsNezzPVNS1rivF2vnjeULryg";
 
 
         if (!Places.isInitialized()) {
