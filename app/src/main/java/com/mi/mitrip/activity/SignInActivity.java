@@ -108,7 +108,7 @@ public class SignInActivity extends AppCompatActivity {
             editTxtEmailSignIn.requestFocus();
             return;
         } else if (editTxtPasswordSignIn.getText().toString().isEmpty()) {
-            editTxtPasswordSignIn.setError(getText(R.string.typeYourUserName));
+            editTxtPasswordSignIn.setError(getText(R.string.typeYourPassword));
             editTxtPasswordSignIn.requestFocus();
             return;
         } else {
