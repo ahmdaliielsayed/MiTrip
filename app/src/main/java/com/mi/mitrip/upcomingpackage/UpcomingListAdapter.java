@@ -158,6 +158,9 @@ public class UpcomingListAdapter extends RecyclerView.Adapter<UpcomingListAdapte
                                         alarmManager.cancel(pendingIntent);
 
                                         Toast.makeText(context, R.string.tripDeletedSuccessfully, Toast.LENGTH_SHORT).show();
+
+                                        dataModelList.remove(trip);
+                                        setDataToAdapter(dataModelList);
                                     }
                                 });
                                 builder.setNegativeButton(R.string.no, new DialogInterface.OnClickListener() {
@@ -205,6 +208,9 @@ public class UpcomingListAdapter extends RecyclerView.Adapter<UpcomingListAdapte
                                 databaseTrips.child(trip.getTripID()).setValue(tripCancelled);
 
                                 Toast.makeText(context, R.string.tripCancelledSuccessfully, Toast.LENGTH_SHORT).show();
+
+                                dataModelList.remove(trip);
+                                setDataToAdapter(dataModelList);
                                 break;
                         }
                         return true;

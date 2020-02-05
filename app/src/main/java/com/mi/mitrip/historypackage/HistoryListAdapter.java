@@ -91,6 +91,9 @@ public class HistoryListAdapter extends RecyclerView.Adapter<HistoryListAdapter.
                             }
                         });
                         Toast.makeText(context, R.string.tripDeletedSuccessfully, Toast.LENGTH_SHORT).show();
+
+                        dataModelList.remove(trip);
+                        setDataToAdapter(dataModelList);
                     }
                 });
                 builder.setNegativeButton(R.string.no, new DialogInterface.OnClickListener() {
