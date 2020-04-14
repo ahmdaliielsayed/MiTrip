@@ -18,7 +18,7 @@
             app:layout_constraintBottom_toBottomOf="@+id/textViewWarning"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/textViewWarning"
-            app:srcCompat="@drawable/warning"
+            app:srcCompat="@drawable/warningg"
             tools:ignore="ContentDescription" />
 
         <TextView
