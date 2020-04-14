@@ -90,8 +90,8 @@ public class TripActivity extends AppCompatActivity {
         databaseTrips1 = FirebaseDatabase.getInstance().getReference("trips");
         databaseTrips2 = FirebaseDatabase.getInstance().getReference("trips");
 
-        //APIKey = "AIzaSyCYMA5lorg1tMasLdMXTpi8qaEBYh1AdBM";
-        APIKey = "AIzaSyCOGWFZpYcsNezzPVNS1rivF2vnjeULryg";
+        //APIKey = "AIzaSyCShYBlgJ1uU6HDzGC8XBOcipdwMIhlcA8";
+        APIKey = "AIzaSyA23ck8mw7hzhKQ-uSLWVmBd2XbzB0PyK8";
 
         if (!Places.isInitialized()) {
             Places.initialize(getApplicationContext(), APIKey);
