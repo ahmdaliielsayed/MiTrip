@@ -68,6 +68,7 @@
     <string name="activity_title_about_us">معلومات عنا</string>
     <string name="activity_title_privacy_policy">سياسة الخصوصية</string>
     <string name="action_clear_all">امسح الكل</string>
+    <string name="itemTips">نصائح</string>
     <string name="action_logout">تسجيل الخروج</string>
     <string name="action_mark_all_read">وضع علامة قراءة للجميع</string>
     <string name="privacy_policy">سياسة الخصوصية</string>
@@ -150,4 +151,20 @@
     <string name="delete">حذف</string>
 
     <string name="other">أخرى</string>
+
+    <!-- activity tips -->
+    <string name="txtViewWarning">قد يمنع جهازكـ هذا البرنامج (Message Scheduler) من العمل بشكل صحيح في الأوقات المجدولة إذا كان لديه ميزات إدارة تطبيق البطارية أو عمليات الخلفية</string>
+    <string name="txtViewXiaomi">إعدادات جهاز XIAOMI</string>
+    <string name="textViewAutoStart">البدء التلقائي (هام)</string>
+    <string name="textViewStepAutoStart">افتح إعدادات الهاتف> الأذونات> البدء التلقائي> شغّل برنامج Message Scheduler.</string>
+    <string name="textViewBatterySaver">حافظ البطارية</string>
+    <string name="textViewStepBatterySaver">افتح إعدادات الهاتف> البطارية والأداء> اختر التطبيقات> اختر Message Scheduler> اختر لا قيود.</string>
+    <string name="textViewBatteryOptimization">تحسين البطارية</string>
+    <string name="textViewBatteryOptimizationText">يمكن أن يساعد تعطيل تحسين البطارية لتطبيق Message Scheduler في مساعدة التطبيق على العمل بشكل أكثر موثوقية على Android 6.0 والإصدارات الأحدث.\nيرجى ملاحظة أن Message Scheduler لا يستهلكـ الكثير من البطارية.</string>
+    <string name="btnDoItNow">افعلها الآن</string>
+    <string name="textViewRecommendations">توصيات أخرى</string>
+    <string name="textViewRecommendationsOne">* نظراََ لأن الإعدادات قد تكون مختلفة على جهازكـ ، نوصي بإعادة التحقق مرة أخرى من إعدادات الهاتف> التطبيقات> Message Scheduler> البطارية> والتأكد من السماح بتشغيل برنامج Message Scheduler في الخلفية وعدم تقييده بواسطة البطارية الاقوي.</string>
+    <string name="textViewRecommendationsTwo">* إذا كان جهازكـ يتضمن بعض تطبيقات Battery Saver أو Cleanup (على سبيل المثال: Cleanmaster و CM Suite و CCleaner و Battery Doctor و Greenify و Amplify) فتأكد من إضافة Message Scheduler إلى القائمة البيضاء.</string>
+    <string name="textViewRecommendationsThree">* يُوصى بشدة بتمكين وضع التنبيه على إعدادات التطبيق> متقدم.</string>
+    <string name="tips">نصائح</string>
 </resources>

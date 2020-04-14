@@ -68,6 +68,7 @@
     <string name="activity_title_about_us">About Us</string>
     <string name="activity_title_privacy_policy">Privacy Policy</string>
     <string name="action_clear_all">Clear All</string>
+    <string name="itemTips">Tips</string>
     <string name="action_logout">Logout</string>
     <string name="action_mark_all_read">Mark All as Read</string>
     <string name="privacy_policy">Privacy Policy</string>
@@ -150,4 +151,20 @@
     <string name="delete">Delete</string>
 
     <string name="other">Other</string>
+
+    <!-- activity tips -->
+    <string name="txtViewWarning">Your device may prevent this program (Messaging Manager) from working properly at its scheduled times if it has battery application management features or background processes</string>
+    <string name="txtViewXiaomi">XIAOMI\'S DEVICE SETTINGS</string>
+    <string name="textViewAutoStart">Auto Start (Important)</string>
+    <string name="textViewStepAutoStart">Open Phone Settings > Permissions > Auto-Start > turn on for Message Scheduler.</string>
+    <string name="textViewBatterySaver">Battery Saver</string>
+    <string name="textViewStepBatterySaver">Open Phone Settings > Battery &amp; Performance > Choose apps > choose Message Scheduler > Choose no restrictions.</string>
+    <string name="textViewBatteryOptimization">Battery Optimization</string>
+    <string name="textViewBatteryOptimizationText">Disable Battery Optimization for Message Scheduler can help the app to work more reliably on Android 6.0 and higher.\nPlease notice that Message Scheduler doesn\'t use much battery.</string>
+    <string name="btnDoItNow">Do It Now</string>
+    <string name="textViewRecommendations">Further recommendations</string>
+    <string name="textViewRecommendationsOne">* Because the setting may be different on your devices, so we\'d recommend that you recheck again on Phone Settings > Apps > Message Scheduler > Battery > and make sure that Message Scheduler is allowed to run as background and isn\'t restricted by Battery Optimization.</string>
+    <string name="textViewRecommendationsTwo">* If your device includes some Battery Saver or Cleanup apps(for example: Cleanmaster, CM Suite, CCleaner, Battery Doctor, Greenify, and Amplify) make sure that Message Scheduler is added to whitelist.</string>
+    <string name="textViewRecommendationsThree">* Enable Alert mode on App Settings > Advanced is strongly recommended.</string>
+    <string name="tips">Tips</string>
 </resources>

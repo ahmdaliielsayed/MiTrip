@@ -76,10 +76,8 @@ public class NoteDialogueActivity extends AppCompatActivity {
 
                 if (notesArrayList.size() <= 0){
                     findViewById(R.id.linearLayoutFragmentUpcoming).setVisibility(View.VISIBLE);
-                    return;
                 } else {
                     findViewById(R.id.linearLayoutFragmentUpcoming).setVisibility(View.GONE);
-                    return;
                 }
             }
 

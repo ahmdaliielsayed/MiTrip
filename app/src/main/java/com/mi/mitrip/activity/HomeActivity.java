@@ -401,6 +401,9 @@ public class HomeActivity extends AppCompatActivity {
         // as you specify a parent activity in AndroidManifest.xml.
 
         switch (item.getItemId()){
+            case R.id.item_tips:
+                startActivity(new Intent(this, TipsActivity.class));
+                return true;
             case R.id.action_logout:
                 FirebaseAuth.getInstance().signOut();
                 startActivity(new Intent(HomeActivity.this, SignInActivity.class));
