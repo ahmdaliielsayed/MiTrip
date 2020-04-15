@@ -3,12 +3,15 @@ package com.mi.mitrip;
 import android.app.Service;
 import android.content.Intent;
 import android.graphics.PixelFormat;
+import android.graphics.Point;
 import android.os.Build;
 import android.os.IBinder;
+import android.view.Display;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.ViewTreeObserver;
 import android.view.WindowManager;
 import android.widget.Toast;
 
@@ -20,6 +23,8 @@ public class FloatingWidgetShowService extends Service {
     WindowManager.LayoutParams params ;
 
     String TripID, TripName;
+
+    private int mWidth;
 
     public FloatingWidgetShowService() { }
 
@@ -71,6 +76,22 @@ public class FloatingWidgetShowService extends Service {
 //        expandedView = floatingView.findViewById(R.id.Layout_Expended);
         collapsedView = floatingView.findViewById(R.id.Layout_Collapsed);
 
+        Display display = windowManager.getDefaultDisplay();
+        final Point size = new Point();
+        display.getSize(size);
+
+        ViewTreeObserver vto = floatingView.getViewTreeObserver();
+        vto.addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
+            @Override
+            public void onGlobalLayout() {
+                floatingView.getViewTreeObserver().removeOnGlobalLayoutListener(this);
+                int width = floatingView.getMeasuredWidth();
+
+                //To get the accurate middle of the screen we subtract the width of the floating widget.
+                mWidth = size.x - width;
+            }
+        });
+
         //adding click listener to close button and expanded view
         floatingView.findViewById(R.id.Widget_Close_Icon).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -106,8 +127,17 @@ public class FloatingWidgetShowService extends Service {
                             openNoteDialogue.putExtra("tripID", TripID);
                             openNoteDialogue.putExtra("tripName", TripName);
                             getApplicationContext().startActivity(openNoteDialogue);
-                            return true;
                         }
+
+                        //Logic to auto-position the widget based on where it is positioned currently w.r.t middle of the screen.
+                        int middle = mWidth / 2;
+                        float nearestXWall = params.x >= middle ? mWidth : 0;
+                        params.x = (int) nearestXWall;
+
+
+                        windowManager.updateViewLayout(floatingView, params);
+
+                        return true;
 
                     case MotionEvent.ACTION_MOVE:
 
