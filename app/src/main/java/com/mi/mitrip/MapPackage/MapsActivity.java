@@ -7,6 +7,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.mi.mitrip.R;
 import com.mi.mitrip.activity.Trip;
 import com.mi.mitrip.activity.TripActivity;
@@ -92,7 +93,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                             double srclong = trip.getTripStartPointLongitude();
                             double scrlat = trip.getTripStartPointLatitude();
                             final LatLng src = new LatLng(srclong, scrlat);
-                            mMap.addMarker(new MarkerOptions().position(src).title(trip.getTripName()));
+                            mMap.addMarker(new MarkerOptions().position(src).title(trip.getTripName())).setIcon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN));
                             double deslong = trip.getTripEndPointLongitude();
                             double deslat = trip.getTripEndPointLatitude();
                             final LatLng des = new LatLng(deslong, deslat);
