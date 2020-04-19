@@ -18,7 +18,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
-import com.mi.mitrip.MapPackage.MapsActivity;
+import com.mi.mitrip.MapPackage.ShowHistoryMap;
 import com.mi.mitrip.R;
 import com.mi.mitrip.historypackage.HistoryFragment;
 import com.mi.mitrip.fragment.ProfileFragment;
@@ -282,7 +282,12 @@ public class HomeActivity extends AppCompatActivity {
                     case R.id.historyMap:
                         /*navItemIndex = 2;
                         CURRENT_TAG = TAG_PROFILE;*/
-                        Intent openMapActivity =new Intent(HomeActivity.this, MapsActivity.class);
+//                        Intent openMapActivity =new Intent(HomeActivity.this, MapsActivity.class);
+//                        startActivity(openMapActivity);
+                        Intent openMapActivity = new Intent(HomeActivity.this, ShowHistoryMap.class);
+                        openMapActivity.putExtra("key", "allHistoryTrips");
+                        openMapActivity.putExtra("source", "");
+                        openMapActivity.putExtra("destination", "");
                         startActivity(openMapActivity);
 
                         break;

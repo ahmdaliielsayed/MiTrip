@@ -91,7 +91,7 @@ public class TripActivity extends AppCompatActivity {
         databaseTrips2 = FirebaseDatabase.getInstance().getReference("trips");
 
         //APIKey = "AIzaSyCShYBlgJ1uU6HDzGC8XBOcipdwMIhlcA8";
-        APIKey = "AIzaSyA23ck8mw7hzhKQ-uSLWVmBd2XbzB0PyK8";
+        APIKey = "AIzaSyCShYBlgJ1uU6HDzGC8XBOcipdwMIhlcA8"; // replace with your google direction api
 
         if (!Places.isInitialized()) {
             Places.initialize(getApplicationContext(), APIKey);

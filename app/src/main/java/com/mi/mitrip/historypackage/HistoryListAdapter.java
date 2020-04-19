@@ -21,6 +21,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.mi.mitrip.AddNotePackage.ModelPackage.Notes;
+import com.mi.mitrip.MapPackage.ShowHistoryMap;
 import com.mi.mitrip.NoteDialogueActivity;
 import com.mi.mitrip.R;
 import com.mi.mitrip.activity.Trip;
@@ -141,6 +142,19 @@ public class HistoryListAdapter extends RecyclerView.Adapter<HistoryListAdapter.
                 context.startActivity(openNoteDialogue);
             }
         });
+
+        holder.getImgViewMap().setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent openMapActivity = new Intent(context, ShowHistoryMap.class);
+                openMapActivity.putExtra("key", "singleTrip");
+                String source =  trip.getTripStartPointLongitude() + "," + trip.getTripStartPointLatitude();
+                String destination = trip.getTripEndPointLongitude() + "," + trip.getTripEndPointLatitude();
+                openMapActivity.putExtra("source", source);
+                openMapActivity.putExtra("destination", destination);
+                context.startActivity(openMapActivity);
+            }
+        });
     }
 
     @Override
@@ -156,7 +170,7 @@ public class HistoryListAdapter extends RecyclerView.Adapter<HistoryListAdapter.
     public class DataViewHolder extends RecyclerView.ViewHolder {
 
         private TextView txtViewTripDate, txtViewTripTime, txtViewTripName, txtViewTripState, txtViewStartPoint, txtViewEndPoint, txtViewDone;
-        private ImageView imgViewNotes, imageViewExpandCard;
+        private ImageView imgViewNotes, imgViewMap, imageViewExpandCard;
         private ImageButton imageButtonDelete;
         private ConstraintLayout constraintLayoutCardInfo;
 
@@ -211,6 +225,13 @@ public class HistoryListAdapter extends RecyclerView.Adapter<HistoryListAdapter.
                 imgViewNotes = itemView.findViewById(R.id.imgViewNotes);
             }
             return imgViewNotes;
+        }
+
+        public ImageView getImgViewMap() {
+            if (imgViewMap == null) {
+                imgViewMap = itemView.findViewById(R.id.imgViewMap);
+            }
+            return imgViewMap;
         }
 
         public ImageView getImageViewExpandCard() {

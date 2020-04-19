@@ -77,7 +77,7 @@ public class EditTripActivity extends AppCompatActivity {
 
         databaseTrips = FirebaseDatabase.getInstance().getReference("trips");
 
-        APIKey = "AIzaSyCOGWFZpYcsNezzPVNS1rivF2vnjeULryg";
+        APIKey = "AIzaSyCShYBlgJ1uU6HDzGC8XBOcipdwMIhlcA8"; // replace with your google direction api
 
 
         if (!Places.isInitialized()) {

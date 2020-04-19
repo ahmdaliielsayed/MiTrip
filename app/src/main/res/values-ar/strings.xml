@@ -167,4 +167,6 @@
     <string name="textViewRecommendationsTwo">* إذا كان جهازكـ يتضمن بعض تطبيقات Battery Saver أو Cleanup (على سبيل المثال: Cleanmaster و CM Suite و CCleaner و Battery Doctor و Greenify و Amplify) فتأكد من إضافة Message Scheduler إلى القائمة البيضاء.</string>
     <string name="textViewRecommendationsThree">* يُوصى بشدة بتمكين وضع التنبيه على إعدادات التطبيق> متقدم.</string>
     <string name="tips">نصائح</string>
+
+    <string name="fetchDirection">جاري إحضار الإتجاهات …</string>
 </resources>
